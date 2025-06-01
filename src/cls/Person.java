@@ -22,10 +22,10 @@ public class Person {
 
 
     //기본 생성자의 모양
-    public Person(){
-        name = "이름없음";
-        age = 1;
-        gender = "모름";
+    public Person(String name, int age, String gender){
+        this.name = "이름없음";
+        this.age = 1;
+        this.gender = "모름";
     }
 
     public Person(String name,int age){
@@ -88,4 +88,10 @@ public class Person {
         return name;
     }
 
-}
+    @Override
+    public String toString() {
+            return String.format("이름:%s,나이: %d,성별:%s",name,age,gender);
+        }
+
+    }
+

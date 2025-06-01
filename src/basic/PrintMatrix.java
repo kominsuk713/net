@@ -34,4 +34,4 @@ public class PrintMatrix {
 }
 
 
-//git add-> git commit -m 날짜-> git push origin master
+//git add .-> git commit -m 날짜-> git push origin master
