@@ -74,6 +74,11 @@ public class Person {
             System.out.println("성별은 남자 또는 여자 로만 입력할 수 있습니다.");
     }
 
+    public String getGender(){
+        return gender;
+
+    }
+
 
     //name 필드의 setter와 getter를 만드세요.
     //setName:이름을 설정하는 메소드를 만드세요.
@@ -88,7 +93,7 @@ public class Person {
         return name;
     }
 
-    @Override
+    @Override//재정의
     public String toString() {
             return String.format("이름:%s,나이: %d,성별:%s",name,age,gender);
         }

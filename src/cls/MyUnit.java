@@ -29,6 +29,7 @@ public class MyUnit {
         this.power = power;
         this.name = name;
     }
+
     //외부에서 호출가능하도록
     //반환 값이 없는 메소드 damage를 만드세요
     //매개 변수로 power가 주어지고 ,
@@ -60,6 +61,10 @@ public class MyUnit {
 
     public int getPower(){
         return power;
+    }
+
+    public String toString() {
+        return String.format("이름:%s, hp: %d, power:%s",name,hp,power);
     }
 
 }
