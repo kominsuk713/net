@@ -25,11 +25,11 @@ public class Student extends Person{
     //Object class의 equals method를 재정의함
     @Override
     public boolean equals(Object obj){
-        //매개변수 obj가 Student클래스로부터 생성된 인스턴스인지 먼저 검사
+        //매개변수 obj가 Student 클래스로부터 생성된 인스턴스인지 먼저 검사
         if(!(obj instanceof Student))
                 return false;
 
-        Student target = (Student) obj;
+        Student target = (Student) obj;// object -> student 형변환
 
         return getName().equals(target.getName()) &&
                 getAge() == target.getAge() &&
@@ -43,4 +43,10 @@ public class Student extends Person{
     }
 
 
+
+
 }
+
+
+
+

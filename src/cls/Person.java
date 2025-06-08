@@ -43,6 +43,9 @@ public class Person {
     private int age;
     private String gender;
 
+    public Person() {
+    }
+
     //person class의 기능요소
     //반환형 중에 void는 반환값이 없음을 의미한다.
     public void introduce() {
